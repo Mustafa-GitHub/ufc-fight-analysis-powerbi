@@ -1,6 +1,6 @@
 # UFC Fight Analysis: Power BI Dashboard
 
-This project is a Power BI dashboard built on 32 years of UFC data (8,500+ fights, 4,400+ fighters, March 1994 to March 2026). It rebuilds the six findings from my [SQL analysis](https://github.com/Mustafa-GitHub/ufc-fight-analysis-sql), with an overview page and one page per finding.
+This project is a Power BI dashboard built on UFC data from 11 March 1994 to 7 March 2026 (8,500+ fights, 4,400+ fighters). It rebuilds the six findings from my [SQL analysis](https://github.com/Mustafa-GitHub/ufc-fight-analysis-sql), with an overview page and one page per finding.
 
 ![Overview](screenshots/01_overview.png)
 
