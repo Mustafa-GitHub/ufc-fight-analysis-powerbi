@@ -4,33 +4,11 @@ This project is a Power BI dashboard built on 32 years of UFC data (8,500+ fight
 
 ![Overview](screenshots/01_overview.png)
 
-## Pages
+## Tools
 
-**Overview:** headline numbers and fights per division
-
-**Stance:** win rate by stance, against the 50% baseline
-
-![Stance](screenshots/02_stance.png)
-
-**Finish Methods:** how fights ended each year, 1994 to 2025
-
-![Finish Methods](screenshots/03_finish_methods.png)
-
-**Finishers:** highest finish rate, minimum 10 wins
-
-![Finishers](screenshots/04_finishers.png)
-
-**Division Leaders:** best win rate in each division, minimum 10 fights
-
-![Division Leaders](screenshots/05_division_leaders.png)
-
-**Striking:** accuracy leaders, and how accuracy changes with volume
-
-![Striking](screenshots/06_striking.png)
-
-**Win Streaks:** the longest unbeaten runs in UFC history
-
-![Win Streaks](screenshots/07_win_streaks.png)
+- **Power BI Desktop**
+- **Power Query**: cleaning and reshaping
+- **DAX**: measures, calculated columns and a calculated table
 
 ## How It Was Built
 
@@ -58,10 +36,38 @@ This project is a Power BI dashboard built on 32 years of UFC data (8,500+ fight
 
 Every page was checked against my SQL results, and all of them matched. For example: southpaws win 52.5%, and Jon Jones's longest streak is 19. The win streak page used a different method from SQL, but gave the same streaks and dates.
 
+## Pages
+
+**Overview (shown above):** the size of the data, and the number of fights in each division.
+
+**Stance:** southpaw and switch fighters win about 52.5%, while orthodox fighters win 49.4%.
+
+![Stance](screenshots/02_stance.png)
+
+**Finish Methods:** decisions rose from 0% of fights in 1994 to about 50% today. Submissions fell from about 65% to under 20%, while KO/TKOs stayed steady.
+
+![Finish Methods](screenshots/03_finish_methods.png)
+
+**Finishers:** Gerald Meerschaert finished all 12 of his wins. Charles Oliveira stands out for volume, with 21 finishes from 25 wins.
+
+![Finishers](screenshots/04_finishers.png)
+
+**Division Leaders:** ranking by win rate alone found the real champions, including Khabib, Jon Jones, Volkanovski and Amanda Nunes.
+
+![Division Leaders](screenshots/05_division_leaders.png)
+
+**Striking:** the best accuracy drops as volume rises, from 74% for low-volume fighters to 59% for high-volume ones. Volkanovski keeps 57% across 3,178 attempts.
+
+![Striking](screenshots/06_striking.png)
+
+**Win Streaks:** Jon Jones holds the longest streak, 19 wins from 2010 to 2024. Anderson Silva's famous run of 16 lasted from 2006 to 2012.
+
+![Win Streaks](screenshots/07_win_streaks.png)
+
 ## How to View
 
-- **ufc-dashboard.pdf:** the full dashboard, readable by anyone
-- **ufc-fight-analysis-dashboard.pbix:** the Power BI file. Open it with Power BI Desktop (free, Windows)
+- **[ufc-dashboard.pdf](ufc-dashboard.pdf):** the full dashboard, readable by anyone
+- **[ufc-fight-analysis-dashboard.pbix](ufc-fight-analysis-dashboard.pbix):** the Power BI file. Open it with Power BI Desktop (free, Windows)
 - **screenshots:** one image per page
 
 The data comes from the CSVs in my [SQL repo](https://github.com/Mustafa-GitHub/ufc-fight-analysis-sql). To refresh it, point Power BI to the two CSVs in that repo's `data` folder.
